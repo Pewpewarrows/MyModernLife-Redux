@@ -21,6 +21,8 @@ Desktop.ini
 *.bak
 tags
 TAGS
+*.sublime-project
+*.sublime-workspace
 
 # Build
 bin

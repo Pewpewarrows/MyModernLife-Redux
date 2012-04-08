@@ -1,0 +1,1 @@
+pelican -s conf/settings.py src && ghp-import -p bin
