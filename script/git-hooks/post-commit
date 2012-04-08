@@ -1,1 +1,4 @@
-pelican -s conf/settings.py src && ghp-import -p bin
+#!/usr/bin/env bash
+
+# Add -p to the ghp-import command to auto-push...
+pelican -s conf/settings.py src && ghp-import bin

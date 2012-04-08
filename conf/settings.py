@@ -3,7 +3,7 @@ SITENAME = u'Marco\'s Modern Life'
 SITEURL = 'http://marcosmodernlife.com'
 TIMEZONE = "America/New_York"
 
-OUTPUT_PATH = 'bin/'
+OUTPUT_PATH = '../bin/'
 ARTICLE_PERMALINK_STRUCTURE = '/blog/%Y/%m/%d/'
 GITHUB_URL = 'http://github.com/Pewpewarrows/'
 DISQUS_SITENAME = 'mymodernlife'
@@ -36,13 +36,14 @@ DEFAULT_METADATA = (('yeah', 'it is'),)
 
 # static paths will be copied under the same name
 # THEME_STATIC_PATHS
-STATIC_PATHS = [
-    'res/static'
-]
+# STATIC_PATHS = [
+#     '../res/static'
+# ]
 
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
-    ('res/static/robots.txt', 'robots.txt'),
-    ('res/static/humans.txt', 'humans.txt'),
-    ('res/static/favicon.ico', 'favicon.ico'),
+    ('../res/static/robots.txt', 'robots.txt'),
+    ('../res/static/humans.txt', 'humans.txt'),
+    ('../res/static/favicon.ico', 'favicon.ico'),
+    ('../res/CNAME', 'CNAME'),
 )

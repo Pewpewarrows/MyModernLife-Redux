@@ -1,6 +1,6 @@
-all: build
+all: build_site
 
-build:
+build_site:
 	pelican -s conf/settings.py src
 
 develop:
@@ -9,3 +9,6 @@ develop:
 
 freeze:
 	pip freeze -l | sort > conf/requirements.txt
+
+clean:
+	git clean
