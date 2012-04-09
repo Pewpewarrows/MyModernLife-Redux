@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block layout %}
+    <div class="top-push"></div>
+    <div class="container">
+        <header id="site-header">
+            {% block header %}{% endblock %}
+        </header> <!-- /#site-header -->
+        <section id="site-main">
+            {% block main %}{% endblock %}
+        </section> <!-- /#site-main -->
+        <footer id="site-footer">
+            {% block footer %}{% endblock %}
+        </footer> <!-- /#site-footer -->
+    </div> <!-- /.container -->
+    <div class="top-push"></div>
+{% endblock %}

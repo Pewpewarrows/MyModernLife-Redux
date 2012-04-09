@@ -1,0 +1,35 @@
+{% extends 'fixed_960_width.html' %}
+
+{% block header %}
+    <a class="site-logo" href="/"><img alt="MarcosModernLife.com" src=""></a>
+{% endblock %}
+
+{% block main %}
+    <section class="breadcrumbs">
+        <ul>
+            {% block breadcrumbs %}{% endblock %}
+        </ul>
+    </section> <!-- /.breadcrumbs -->
+    {% block core %}
+        {% block content %}{% endblock %}
+    {% endblock %}
+{% endblock %}
+
+{% block footer %}
+    <hr />
+    <small>
+        &copy; Copyright 2012 {{ SITENAME }}. All Rights Reserved.
+        This website is <a href="{{ GITHUB_URL }}">open-source</a>.
+        Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>.
+    </small>
+    <div class="pull-right">
+        <small>
+            <!-- TODO: should be <nav> -->
+            <ul id="footer-nav">
+                <li class="first"><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul> <!-- /#footer-nav -->
+        </small>
+    </div>
+{% endblock %}

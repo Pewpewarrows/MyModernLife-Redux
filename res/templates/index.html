@@ -1,0 +1,63 @@
+{% extends 'site_base.html' %}
+
+{% block data_controller %}main{% endblock %}
+{% block data_action %}home{% endblock %}
+
+{% block core %}        
+    {% if articles %}
+        {% for article in articles_page.object_list %}
+            {# First item #}
+            {% if loop.first and not articles_page.has_previous() %}
+                <aside>
+                    <article>
+                        <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
+                        {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
+                    </article>
+                    {% if loop.length == 1 %}
+                        {% include 'pagination.html' %}
+                    {% endif %}
+                </aside>
+                {% if loop.length > 1 %}
+                    <section>
+                        <h1>Other articles</h1>
+                        <hr />
+                        <ol>
+                {% endif %}
+            {# other items #}
+            {% else %} 
+                {% if loop.first and articles_page.has_previous %}
+                    <section>
+                        <ol start="{{ articles_paginator.per_page -1 }}">
+                {% endif %}
+                <li>
+                    <article>    
+                        <header>
+                            <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h1>
+                        </header>
+                        
+                        <div>
+                            {% include 'article_infos.html' %}
+                            {{ article.summary }}
+                            <a href="{{ SITEURL }}/{{ article.url }}">read more</a>
+                            {% include 'comments.html' %}
+                        </div>
+                    </article>
+                </li>
+            {% endif %}
+            {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %}
+                {% include 'pagination.html' %}
+            {% endif %}
+        {% endfor %}
+        {% if loop.length > 1 or articles_page.has_previous() %}
+            </ol>
+            </section>
+        {% endif %}
+    {% else %}
+        <section>    
+            <h2>Pages</h2>
+            {% for page in PAGES %}
+                <li><a href="{{ SITEURL }}/pages/{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </section>
+    {% endif %}
+{% endblock %}
