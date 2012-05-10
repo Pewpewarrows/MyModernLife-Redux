@@ -39,6 +39,8 @@ FILES_TO_COPY = (
     ('../res/CNAME', 'CNAME'),
 )
 
+# Custom context variables, used optionally in each theme
+
 LINKS = (
     ('Google', 'http://google.com'),
 )
