@@ -6,6 +6,9 @@ build_site: reset
 build_live: reset
 	pelican -r -s conf/settings.py src
 
+update_ghp: build_site
+	ghp-import bin
+
 develop:
 	mkvirtualenv mml_redux
 	~/.virtualenvs/mml_redux/bin/pip install -r conf/requirements.txt
