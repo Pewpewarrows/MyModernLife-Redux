@@ -1,9 +1,9 @@
 all: build_site
 
-build_site:
+build_site: reset
 	pelican -s conf/settings.py src
 
-build_live:
+build_live: reset
 	pelican -r -s conf/settings.py src
 
 develop:
@@ -17,8 +17,11 @@ deploy:
 	git push --all
 
 freeze:
-	pip freeze -l | sort > conf/requirements.txt
+	# pip freeze -l | sort > conf/requirements.txt
+	pip freeze -l | sort
 
-clean:
-	git clean -f
+reset:
 	rm -rf bin/
+
+clean: reset
+	git clean -f

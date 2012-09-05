@@ -31,7 +31,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
 
-    <!-- Many of this site's static files were inspired by open-source projects, 
+    <!-- Many of this site's static files were inspired by open-source projects,
     including HTML5 Boilerplate, Mobile Boilerplate, and Twitter Bootstrap. -->
 
     <!--  Mobile Viewport Fix
@@ -67,7 +67,7 @@
 
     <!-- Stylesheets -->
     <!-- <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" /> -->
-    <link rel="stylesheet" href="/theme/static/css/{{ CSS_FILE }}" />
+    <link rel="stylesheet" href="/theme/css/{{ CSS_FILE }}" />
 
     <!-- Additional stylesheets -->
     {% block extrastyle %}{% endblock %}
@@ -79,7 +79,7 @@
     All scripts at the bottom, except for Modernizr, which enables feature
     detection as well as basic HTML5 element support in legacy browsers.
     -->
-    <script src="/theme/static/js/modernizr.js"></script>
+    <script src="/theme/js/modernizr.js"></script>
 </head>
 <!-- http://www.viget.com/inspire/extending-paul-irishs-comprehensive-dom-ready-execution/ -->
 <body id="{% block body_id %}{% endblock %}" data-controller="{% block data_controller %}{% endblock %}" data-action="{% block data_action %}{% endblock %}">
@@ -105,7 +105,7 @@
 
     <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="/theme/static/js/jquery.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="/theme/js/jquery.js"%3E%3C/script%3E'))</script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script> -->
 
     <!-- IE6 users with Javascript disabled are < 0.05% of total visitors, they'll just have to deal with it -->
@@ -116,7 +116,7 @@
     </script>
     <![endif]-->
 
-    <script src="/theme/static/js/all.js"></script>
+    <script src="/theme/js/all.js"></script>
 
     {% include 'analytics.html' %}
     {% include 'piwik.html' %}
