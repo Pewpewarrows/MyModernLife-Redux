@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Marco's Modern Life</title><link href="http://marcosmodernlife.com" rel="alternate"></link><link href="http://marcosmodernlife.com/feeds/all-en.atom.xml" rel="self"></link><id>http://marcosmodernlife.com</id><updated>2012-04-08T09:11:00-04:00</updated><entry><title>Hello, World!</title><link href="http://marcosmodernlife.com/blog/2012/04/08/hello-world.html" rel="alternate"></link><updated>2012-04-08T09:11:00-04:00</updated><author><name>Marco Chomut</name></author><id>http://marcosmodernlife.com/blog/2012/04/08/hello-world.html</id><summary type="html">&lt;p&gt;Hello, World!
+This is a test of my first blog post.&lt;/p&gt;
+</summary><category term="hello"></category><category term="world"></category></entry></feed>
