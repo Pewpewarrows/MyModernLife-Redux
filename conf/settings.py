@@ -53,6 +53,6 @@ SOCIAL = (
 MENUITEMS = ()
 
 DISQUS_SITENAME = 'marcosmodernlife'
-GITHUB_URL = 'http://github.com/Pewpewarrows/pewpewarrows.github.com/'
+GITHUB_URL = 'https://github.com/Pewpewarrows/MyModernLife-Redux'
 GOOGLE_ANALYTICS = ''
 TWITTER_USERNAME = 'pewpewarrows'
