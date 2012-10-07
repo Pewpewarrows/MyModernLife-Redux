@@ -20,6 +20,8 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 TAG_FEED_RSS = 'feeds/tag_%s.rss.xml'
 FEED_MAX_ITEMS = 100
 
+# Only good ones in pelican-themes: Just-Read, bootlex, svbtle, syte
+THEME = 'svbtle'
 # THEME = 'res/'
 # THEME_STATIC_PATHS = [
     # 'static',
