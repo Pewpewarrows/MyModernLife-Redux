@@ -20,11 +20,11 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 TAG_FEED_RSS = 'feeds/tag_%s.rss.xml'
 FEED_MAX_ITEMS = 100
 
-THEME = 'res/'
-THEME_STATIC_PATHS = [
-    'static',
-]
-CSS_FILE = 'mml.css'
+# THEME = 'res/'
+# THEME_STATIC_PATHS = [
+    # 'static',
+# ]
+# CSS_FILE = 'mml.css'
 
 # static paths will be copied under the same name
 # STATIC_PATHS = [
